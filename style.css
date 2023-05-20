@@ -1,0 +1,182 @@
+*{
+    padding: 0;
+    margin: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+    outline: red dashed 1px;
+}
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #0082e6;
+}
+
+nav{
+    background: #0082e6;
+    height: 90px;
+    width: 100%;
+}
+
+label.logo{
+    color:white;
+    font-size: 35px;
+    line-height: 90px;
+    padding: 0 75px;
+    font-weight: bold;
+}
+
+nav ul{
+    float: right;
+    margin-right: 20px;
+}
+
+nav ul li{
+    display: inline-block;
+    line-height: 89px;
+    margin: 0 5px;
+}
+
+nav ul li a{
+    color: white;
+    font-size: 20px;
+    text-transform: uppercase;
+    border-radius: 10%;
+    padding: 10px 10px 10px 10px;
+}
+
+.discord{
+    width: 3em;
+    height: 3em;
+}
+
+a.active,a:hover{
+    background: #0169b8;
+    transition: .5s;
+}
+
+section{
+    background: url("spawn-background.png") no-repeat;
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+    height: calc(100vh - 80px);
+}
+
+.container{
+    position: relative;
+}
+
+.container .wrapper {
+    width: 99vw;
+    height: 75vh;
+    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
+    overflow: hidden;
+}
+
+.container .wrapper-holder{
+    display: grid;
+    grid-template-columns: repeat(4, 100%);
+    height: 100%;
+    width: 100%;
+    animation: slider 25s ease-in-out infinite
+     alternate;
+}
+
+.container #slider-img-1{
+    background-image: url("1.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.container #slider-img-2{
+    background-image: url("2.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.container #slider-img-3{
+    background-image: url("3.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.container #slider-img-4{
+    background-image: url("4.png");
+    background-position-x: center;
+    background-position-y: center;
+    background-size: cover;
+}
+
+.container .button-holder .button{
+    background-color: #0169b8;
+    width: 15px;
+    height: 15px;
+    border-radius: 15px;
+    display: inline-block;
+    margin: .3rem;
+}
+
+.container .button-holder{
+    position: absolute;
+    left: 45%;
+    bottom: 0%;
+}
+
+.button:hover{
+    box-shadow: 0px 0px 7px 4px #0169b8;
+}
+
+@keyframes slider{
+    0%{transform: translate(0%);}
+    10%{transform: translate(-100%);}
+    20%{transform: translate(-100%);}
+    30%{transform: translate(-200%);}
+    40%{transform: translate(-200%);}
+    50%{transform: translate(-200%);}
+    60%{transform: translate(-300%);}
+    70%{transform: translate(-300%);}
+    80%{transform: translate(-300%);}
+    90%{transform: translate(0%);}
+    100%{transform: translate(0%);}
+}
+
+p.about{
+    font-size: large;
+    font-weight: bold;
+    margin-top: 3%;
+    margin-left: 2%;
+    margin-right: 2%;
+    margin-bottom: 3%;
+    padding: 2%;
+    border-radius: 25px;
+    background-color: #0082e6;
+    box-shadow: 0px 0px 10px 4px rgb(61, 61, 61);
+}
+
+table{
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: black;
+    border-radius: 25px;
+    background-color: #0169b8;
+}
+
+.application {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: blue;
+}
+
+td{
+    padding: 1%;
+}
+
+h1{
+    text-align: center;
+}
