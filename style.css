@@ -28,13 +28,17 @@ label.logo{
 
 nav ul{
     float: right;
-    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
 }
 
 nav ul li{
-    display: inline-block;
-    line-height: 89px;
-    margin: 0 5px;
+    margin-right: 20px;
+    display: flex;
+    justify-content: end;
+    align-items: center;
+    height: 5.5em;
 }
 
 nav ul li a{
@@ -45,12 +49,14 @@ nav ul li a{
     padding: 10px 10px 10px 10px;
 }
 
-.discord{
+img{
+    margin: auto;
+    display: block;
     width: 3em;
     height: 3em;
 }
 
-a.active,a:hover{
+a.active,img:hover,a:hover{
     background: #0169b8;
     transition: .5s;
 }
