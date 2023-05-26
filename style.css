@@ -4,12 +4,13 @@
     text-decoration: none;
     list-style: none;
     box-sizing: border-box;
-    outline: red dashed 1px;
+    font-family: minecraftia;
+    /* outline: red dashed 1px; */
 }
 
 body{
     font-family: Arial, Helvetica, sans-serif;
-    background-color: #0082e6;
+    background-color: #161718;
 }
 
 nav{
@@ -49,16 +50,21 @@ nav ul li a{
     padding: 10px 10px 10px 10px;
 }
 
-img{
+img.discord{
     margin: auto;
     display: block;
     width: 3em;
     height: 3em;
+    -webkit-transition: -webkit-transform 1s;
 }
 
 a.active,img:hover,a:hover{
     background: #0169b8;
     transition: .5s;
+}
+
+img.discord:hover{
+    -webkit-transform: rotate(360deg) translateZ(0);
 }
 
 section{
@@ -76,7 +82,6 @@ section{
 .container .wrapper {
     width: 99vw;
     height: 75vh;
-    box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.6);
     overflow: hidden;
 }
 
@@ -151,32 +156,95 @@ section{
 }
 
 p.about{
+    font-weight: normal;
+    font-style: oblique;
+    color: white;
     font-size: large;
     font-weight: bold;
     margin-top: 3%;
-    margin-left: 2%;
-    margin-right: 2%;
+    margin-left: 140px;
+    margin-right: 140px;
     margin-bottom: 3%;
     padding: 2%;
     border-radius: 25px;
-    background-color: #0082e6;
-    box-shadow: 0px 0px 10px 4px rgb(61, 61, 61);
+    /* background-color: #0082e6; */
 }
 
-table{
+/* table{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
     color: black;
     border-radius: 25px;
     background-color: #0169b8;
-}
+} */
 
-.application {
+/* Minecraft Chest UI - https://codepen.io/aaronsoto/pen/bGEXObJ */
+
+table{
+    font-family: minecraftia;
+    font-weight: bold;
+    font-style: normal;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-direction: column;
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 2%;
-    color: blue;
+    height: auto;
+    padding: 0 15px;
+    padding-bottom: 15px;
+    width: auto;
+    background-color: #c6c6c6;
+    box-shadow: 8px 0 0 0 #555555,
+    0 8px 0 0 #555555,
+    4px 4px 0 0 #555555,
+    -8px 0 0 0 #e8e8e8,
+    0 -8px 0 0 #e8e8e8,
+    -4px -4px 0 0 #e8e8e8,
+    0 0 0 4px #b5b4b5,
+    4px 8px 0 0 #555,
+    8px 4px 0 0 #555,
+    -4px -8px 0 0 #e8e8e8,
+    -8px -4px 0 0 #e8e8e8,
+    8px -4px 0 0 #000,
+    4px -8px 0 0 #000,
+    -8px 4px 0 0 #000,
+    -4px 8px 0 0 #000,
+    -8px -8px 0 0 #000,
+    8px 8px 0 0 #000,
+    -12px 0 0 0 #000,
+    -12px -4px 0 0 #000,
+    12px 0 0 0 #000,
+    12px 4px 0 0 #000,
+    0 -12px 0 0 #000,
+    -4px -12px 0 0 #000,
+    0 12px 0 0 #000,
+    4px 12px 0 0 #000;
+}
+
+.title {
+    font-family: minecraftia;
+    font-weight: bold;
+    font-style: normal;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: white;
+}
+
+.application {
+    font-family: minecraftia;
+    font-weight: normal;
+    font-style: normal;
+    font-size: 1.5em;
+    margin-top: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2%;
+    color: #555;
 }
 
 td{
