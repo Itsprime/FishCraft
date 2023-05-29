@@ -18,9 +18,6 @@ nav{
     height: 90px;
     width: 100%;
 }
-.menu-icon{
-    display: block;
-}
 
 label.logo{
     color:white;
@@ -96,6 +93,22 @@ nav ul li a{
     /* display: none; */
 }
 
+.navigation input:checked ~ .hamburger {
+    background: transparent;
+}
+
+.navigation input:checked ~ .hamburger:before {
+    top: 0;
+    transform:  rotate(-45deg);
+    width: 30px;
+}
+
+.navigation input:checked ~ .hamburger:after {
+    top: 0;
+    transform: rotate(45deg);
+    width: 30px;
+}
+
 img.discord{
     margin: auto;
     display: block;
@@ -113,7 +126,24 @@ img.discord:hover{
     -webkit-transform: rotate(360deg) translateZ(0);
 }
 
-@media (max-width: 1280px){
+@media screen and (max-width: 992px) {
+    .hamburger, .toggle-menu{
+        display: block;
+    }
+    nav ul{
+        justify-content: start;
+        flex-direction: column;
+        align-items: center;
+        position: fixed;
+        top: 0;
+        right: 0;
+        background-color: red;
+        width: 150px;
+        height: 100%;
+    }
+}
+
+/* @media (max-width: 1280px){
     nav ul{
         margin-right: 15px;
     }
@@ -125,7 +155,7 @@ img.discord:hover{
 
 @media (max-width: 1090px){
     
-}
+} */
 
 section{
     background: url("spawn-background.png") no-repeat;
