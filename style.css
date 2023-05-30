@@ -1,11 +1,11 @@
 *{
-    padding: 0;
     margin: 0;
+    padding: 0;
+    box-sizing: border-box;
     text-decoration: none;
     list-style: none;
-    box-sizing: border-box;
     font-family: minecraftia;
-    /* outline: red dashed 1px; */
+    outline: red dashed 1px;
 }
 
 body{
@@ -28,7 +28,7 @@ body{
     color:white;
     font-size: 35px;
     line-height: 90px;
-    padding: 0 75px;
+    padding: 0 45px;
     font-weight: bold;
     display: block;
 }
@@ -110,7 +110,7 @@ body{
 }
 
 .hamburger, .toggle-menu {
-    /* display: none; */
+    display: none;
 }
 
 .navigation input:checked ~ .hamburger {
@@ -141,21 +141,35 @@ img.discord:hover{
     -webkit-transform: rotate(360deg) translateZ(0);
 }
 
+.navigation input:checked ~ .menu{
+    right: 0;
+}
 @media screen and (max-width: 992px) {
     .hamburger, .toggle-menu{
         display: block;
     }
-    nav ul{
+    .header{
+        padding: 10px 20px;
+    }
+    .menu{
         justify-content: start;
         flex-direction: column;
         align-items: center;
         position: fixed;
         top: 0;
-        right: 0;
-        background-color: red;
-        width: 150px;
+        right: -300px;
+        background-color: green;
+        width: 300px;
         height: 100%;
+        padding-top: 100px;
     }
+    .menu li{
+        width: 100%;
+    }
+    .menu li a, .menu li a:hover{
+        padding: 30px;
+    }
+
 }
 
 /* section{ dont think im using this anymore
