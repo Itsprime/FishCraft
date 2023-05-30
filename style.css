@@ -13,41 +13,60 @@ body{
     background-color: #161718;
 }
 
-nav{
-    background: #0082e6;
-    height: 90px;
+.header{
+    position: relative;
     width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #0169b8;
+    padding: 0 25px;
+    transition: 0.3s;
 }
 
-label.logo{
+.logo a{
     color:white;
     font-size: 35px;
     line-height: 90px;
     padding: 0 75px;
     font-weight: bold;
+    display: block;
 }
 
-nav ul{
-    float: right;
+.navigation{
     display: flex;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
 }
 
-nav ul li{
-    margin-right: 20px;
+.menu{
     display: flex;
-    justify-content: end;
+    justify-content: center;
+    flex-direction: row;
     align-items: center;
-    height: 5.5em;
+    z-index: 1;
+    transition: 0.5s;
 }
 
-nav ul li a{
-    color: white;
+.menu li{
+    list-style-type: none;
+}
+
+.menu li a{
+    color:white;
+    text-decoration: none;
+    display: block;
+    padding: 40px 25px;
     font-size: 20px;
     text-transform: uppercase;
-    border-radius: 10%;
-    padding: 10px 10px 10px 10px;
+    line-height: 1;
+    transition: 0.3s;
+}
+
+.menu li a:hover{
+    background: rgb(255, 0, 0);
+    transition: .5s;
+    padding: 35px 25px 45px 25px;
 }
 
 .hamburger{
@@ -61,7 +80,8 @@ nav ul li a{
     transition: 0.3s;
 }
 
-.hamburger:before, .hamburger:after{
+.hamburger:before,
+.hamburger:after{
     content: "";
     position: absolute;
     height: 4px;
@@ -77,7 +97,7 @@ nav ul li a{
 }
 .hamburger::after{
     top: 10px;
-    width: 20px;
+    width: 25px;
 }
 
 .toggle-menu{
@@ -86,7 +106,7 @@ nav ul li a{
     height: 100%;
     z-index: 3;
     cursor: pointer;
-    /* opacity: 0; */
+    opacity: 0;
 }
 
 .hamburger, .toggle-menu {
@@ -117,11 +137,6 @@ img.discord{
     -webkit-transition: -webkit-transform 1s;
 }
 
-a.active,a:hover{
-    background: #0169b8;
-    transition: .5s;
-}
-
 img.discord:hover{
     -webkit-transform: rotate(360deg) translateZ(0);
 }
@@ -143,27 +158,13 @@ img.discord:hover{
     }
 }
 
-/* @media (max-width: 1280px){
-    nav ul{
-        margin-right: 15px;
-    }
-    nav ul li a{
-        font-size: 20px;
-        padding: 5px 5px 5px 5px;
-    }
-}
-
-@media (max-width: 1090px){
-    
-} */
-
-section{
+/* section{ dont think im using this anymore
     background: url("spawn-background.png") no-repeat;
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
     height: calc(100vh - 80px);
-}
+} */
 
 .container{
     position: relative;
