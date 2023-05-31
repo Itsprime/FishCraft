@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: minecraftia;
-    /* outline: red dashed 1px; */
+    outline: red dashed 1px;
 }
 
 body{
@@ -21,7 +21,7 @@ body{
     justify-content: space-between;
     align-items: center;
     background: #0169b8;
-    padding: 0 25px;
+    padding: 0 15px;
     transition: 0.3s;
 }
 
@@ -79,10 +79,10 @@ img.discord{
     -webkit-transition: -webkit-transform 1s;
 }
 
-img.discord:hover, .menu li .discord1:hover{
+.menu li .discord1:hover{
+    padding: 20px 10px;
     background: none;
     -webkit-transform: rotate(360deg) translateZ(0);
-    padding: 0px 0px;
 }
 
 .hamburger{
@@ -176,7 +176,9 @@ img.discord:hover, .menu li .discord1:hover{
     .menu li a, .menu li a:hover{
         padding: 30px;
     }
-
+    .menu li .discord1:hover{
+        padding: 30px 30px;
+    }
 
 }
 
@@ -272,14 +274,17 @@ p.about{
     font-weight: normal;
     font-style: oblique;
     color: white;
-    font-size: large;
     font-weight: bold;
     margin-top: 3%;
-    margin-left: 140px;
-    margin-right: 140px;
+    margin-left: 10%;
+    margin-right: 10%;
     margin-bottom: 3%;
     padding: 2%;
     border-radius: 25px;
+    /* font-size: clamp(12px, 1rem, 2rem); */
+    max-width: 300px;
+    min-height: 200px;
+     
     /* background-color: #0082e6; */
 }
 
