@@ -13,6 +13,7 @@ body{
     background-color: #161718;
     width: auto;
 }
+
 textarea {width:100%;}
 
 .header{
@@ -312,13 +313,11 @@ table{
     align-items: center;
     position: relative;
     flex-direction: column;
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
+    margin: 0% 3% 3% 3%;
+    /* margin: top right bottom left*/
     height: auto;
-    padding: 0 15px;
-    padding-bottom: 15px;
     width: auto;
+    padding-bottom: 15px;
     background-color: #c6c6c6;
     box-shadow: 8px 0 0 0 #555555,
     0 8px 0 0 #555555,
@@ -370,11 +369,6 @@ table{
     color: #555;
 }
 
-table{
-    max-width: 800px;
-    height: 365px;
-    height: 200px;
-}
 td{
     min-width: 22%;
     padding: 1%;
