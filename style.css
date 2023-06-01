@@ -13,6 +13,7 @@ body{
     background-color: #161718;
     width: auto;
 }
+textarea {width:100%;}
 
 .header{
     position: relative;
@@ -23,6 +24,10 @@ body{
     background: #0169b8;
     padding: 0 15px;
     transition: 0.3s;
+}
+
+.logo{
+    float: left;
 }
 
 .logo a{
@@ -179,7 +184,10 @@ img.discord{
     .menu li .discord1:hover{
         padding: 30px 30px;
     }
-
+    .logo a{
+        padding-left: 0;
+        padding-right: 0;
+    }
 }
 
 /* section{ dont think im using this anymore
@@ -281,7 +289,7 @@ p.about{
     margin-bottom: 3%;
     padding: 2%;
     border-radius: 25px;
-    /* font-size: clamp(12px, 1rem, 2rem); */
+    font-size: clamp(12px, 1rem, 2rem);
     /* background-color: #0082e6; */
 }
 
@@ -362,8 +370,20 @@ table{
     color: #555;
 }
 
+table{
+    max-width: 800px;
+    height: 365px;
+    height: 200px;
+}
 td{
+    min-width: 22%;
     padding: 1%;
+    font-size: clamp(12px, 1em, 2em);
+}
+
+tr{
+    max-width: 25%;
+    min-width: 35%;
 }
 
 h1{
