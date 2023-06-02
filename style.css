@@ -309,14 +309,17 @@ table{
     font-family: minecraftia;
     font-weight: bold;
     font-style: normal;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center;
+    align-items: center;  
     position: relative;
     flex-direction: column;
-    margin: 0% 3% 3% 3%;
+    display: inline-flex; */
+    /* margin: 0% auto 3% auto; */
+    margin-right: auto;
+    margin-left: auto;
     /* margin: top right bottom left*/
     height: auto;
-    width: auto;
+    width: clamp(200px, auto, 1400px);
     padding-bottom: 15px;
     background-color: #c6c6c6;
     box-shadow: 8px 0 0 0 #555555,
@@ -368,11 +371,23 @@ table{
     margin-bottom: 2%;
     color: #555;
 }
+@media screen and (max-width: 375px) {
+table{
+    width: 370px;
+    font-size: 1em;
+    }
+
+td{
+    background-color: green;
+    width: vh;
+    }
+}
+
 
 td{
     min-width: 22%;
     padding: 1%;
-    font-size: clamp(12px, 1em, 2em);
+    font-size: clamp(5px, 1em, 2em);
 }
 
 tr{
