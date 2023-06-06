@@ -56,49 +56,49 @@
     </p>
     <h1 class="title">APPLICATION</h1>
     <table>
+        <form action="https://getform.io/" method="POST">
             <tr>
                 <td class="application">Application</td>
             </tr>
             <tr>
                 <td>Age</td>
                 <td>
-                    <input type="text" name="Age" maxlength="2" />
+                    <input type="number" name="Age" maxlength="2" placeholder="21 years or older" required="required"/>
                 </td>
             </tr>
                 <td>Minecraft Name</td>
                 <td>
-                    <input type="text" name="Minecraft_Name" maxlength="16"/>
+                    <input type="text" name="minecraft-name" maxlength="16" required="required"/>
                 </td>
             </tr>
             <tr>
                 <td>Discord Name</td>
                 <td>
-                    <input type="text" name="Discord_Name" maxlength="30"/>
-                    (Example: pwime)
+                    <input type="text" name="discord-name" maxlength="30" required="required" placeholder="Example: pwime or Prime#6666"/>
                 </td>
                 </tr>
             <tr>
                 <td>Why do you think you're a good fit for this community?</td>
                 <td>
-                    <textarea rows="3" cols="2"></textarea>
+                    <textarea rows="3" cols="2" type="text" name="fit-for-community" required="required"></textarea>
                 </td>
             </tr>
             <tr>
                 <td>What do you look for in an ideal minecraft community?</td>
                 <td>
-                    <textarea rows="4" cols="30"></textarea>
+                    <textarea rows="4" cols="30" type="text" name="ideal-minecraft-community" required="required"></textarea>
                 </td>
             </tr>
             <tr>
                 <td>What do you think about our server rules?</td>
                 <td>
-                    <textarea rows="4" cols="30"></textarea>
+                    <textarea rows="4" cols="30"  type="text" name="rules" required="required" placeholder="No Griefing/Stealing. (Respectable pranks are allowed)&#10;Must be 21 and over&#10;No cheating or hacked clients."></textarea>
                 </td>
             </tr>
             <tr>
                 <td>Tell us little about yourself!</td>
                 <td>
-                    <textarea rows="4" cols="30"></textarea>
+                    <textarea rows="4" cols="30" type="text" name="about-yourself" required="required"></textarea>
                 </td>
             </tr>
             <tr>
@@ -121,18 +121,8 @@
                     <input type="reset" value="Reset">
                 </td>
             </tr>
+        </form>
     </table>
     <div class="test">test</div>
-    <div class="form1">
-        <form action="https://getform.io/" method="POST">
-            <div class="form-group">
-                <label for="exampleInputName">Discord Name</label>
-                <input type="text" name="fullname" class="form-control" id="exampleInputName" placeholder="Enter Discord Name" required="required">
-            </div>
-            <label for="exampleInputName">Minecraft Name</label>
-            <input type="text" name="name">
-            <button type="submit">Send</button>
-        </form>
-    </div>
 </body>
 </html>

@@ -14,7 +14,9 @@ body{
     width: auto;
 }
 
-textarea {width:100%;}
+textarea {width:100%;
+    padding-left: 5px;
+}
 
 .header{
     position: relative;
@@ -375,7 +377,7 @@ table{
 }
 @media screen and (max-width: 600px) {
 table{
-    width: 85%;
+    width: 85%; 
     }
 
 td{
@@ -391,6 +393,7 @@ td{
 
 td{
     display: grid;
+    margin-bottom: 0.2rem;
     /* font-weight: 1em; */
     /* padding: 1%; */
     /* font-size: clamp(5px, 1em, 2em); */
@@ -402,44 +405,3 @@ tr{
     min-width: 35%; */
 }
 
-.form1{
-    margin-left: 5%;
-    margin-right: 5%;
-    height: 500px;
-    width: 800px;
-    padding-bottom: 15px;
-    background-color: #c6c6c6;
-    box-shadow: 8px 0 0 0 #555555,
-    0 8px 0 0 #555555,
-    4px 4px 0 0 #555555,
-    -8px 0 0 0 #e8e8e8,
-    0 -8px 0 0 #e8e8e8,
-    -4px -4px 0 0 #e8e8e8,
-    0 0 0 4px #b5b4b5,
-    4px 8px 0 0 #555,
-    8px 4px 0 0 #555,
-    -4px -8px 0 0 #e8e8e8,
-    -8px -4px 0 0 #e8e8e8,
-    8px -4px 0 0 #000,
-    4px -8px 0 0 #000,
-    -8px 4px 0 0 #000,
-    -4px 8px 0 0 #000,
-    -8px -8px 0 0 #000,
-    8px 8px 0 0 #000,
-    -12px 0 0 0 #000,
-    -12px -4px 0 0 #000,
-    12px 0 0 0 #000,
-    12px 4px 0 0 #000,
-    0 -12px 0 0 #000,
-    -4px -12px 0 0 #000,
-    0 12px 0 0 #000,
-    4px 12px 0 0 #000;
-    /* color: white; */
-    text-shadow: 2px 2px #686868;
-}
-
-.form-group{
-    display: grid;
-    margin-bottom: 1rem;
-    max-width: 50%;
-}
