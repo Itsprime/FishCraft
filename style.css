@@ -376,20 +376,26 @@ table{
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
 }
 @media screen and (max-width: 600px) {
-table{
-    width: 85%; 
-    }
+    table{
+        width: 85%; 
+        }
 
-td{
-    /* background-color: green; */
-    font-size: .8em;
-    padding: 0%;
+    td{
+        /* background-color: green; */
+        font-size: .8em;
+        padding: 0%;
     }
+    .title{
+        font-size: 24px;
+    }
+}
 
-.title{
-    font-size: 24px;
+input[type="submit"]{
+    
+    background-color: green;
+    color: red;
 }
-}
+
 
 td{
     display: grid;
@@ -400,7 +406,6 @@ td{
 }
 
 tr{
-
     /* max-width: 25%;
     min-width: 35%; */
 }
