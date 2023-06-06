@@ -375,7 +375,7 @@ table{
 }
 @media screen and (max-width: 600px) {
 table{
-    width: 25%;
+    width: 85%;
     }
 
 td{
@@ -390,7 +390,6 @@ td{
 }
 
 td{
-    
     display: grid;
     /* font-weight: 1em; */
     /* padding: 1%; */
