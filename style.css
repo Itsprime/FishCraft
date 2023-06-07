@@ -193,14 +193,6 @@ img.discord{
     }
 }
 
-/* section{ dont think im using this anymore
-    background: url("spawn-background.png") no-repeat;
-    background-position-x: center;
-    background-position-y: center;
-    background-size: cover;
-    height: calc(100vh - 80px);
-} */
-
 .container{
     position: relative;
 }
@@ -363,7 +355,7 @@ table{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
-    cursor: pointer;
+    /* cursor: pointer; */
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
 	image-rendering: pixelated;
     margin-right: 20%;
@@ -390,12 +382,35 @@ table{
     }
 }
 
-input[type="submit"]{
-    
-    background-color: green;
-    color: red;
+input[type="submit"]:hover, input[type="reset"]:hover{
+    /* why is this backgroundd-color not working?? */
+    background-color: rgba(100, 100, 255, .45);
+    text-shadow: 2px 2px #202013CC;
+    color: #FFFFA0;
 }
 
+input[type="submit"], input[type="reset"]{
+    width: 100px;
+    height: 30px;
+    padding-bottom: 4%;
+    font-size: large;
+    background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+	image-rendering: pixelated;
+    margin-right: 5%;
+    margin-left:auto;
+    text-align: center;
+    image-rendering: pixelated;
+	border: 2px solid #000;
+    color: #DDD;
+    text-shadow: 2px 2px #000A;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+
+    &:hover {
+        background-color: rgba(100, 100, 255, .45);
+        text-shadow: 2px 2px #202013CC;
+        color: #FFFFA0;
+    }
+}
 
 td{
     display: grid;
@@ -403,6 +418,14 @@ td{
     /* font-weight: 1em; */
     /* padding: 1%; */
     /* font-size: clamp(5px, 1em, 2em); */
+}
+
+.test2{
+    display: flex;
+}
+
+.test1{
+    display: block;
 }
 
 tr{
