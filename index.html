@@ -9,7 +9,7 @@
 </style>
 </head>
 <!--this is an example comment-->
-<body>
+<body id="home">
     <header class="header">
         <div class="logo">
             <a href="#">FishCraft</a>
@@ -18,9 +18,9 @@
             <input type="checkbox" class="toggle-menu">
             <div class="hamburger"></div>
             <ul class="menu">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#">Apply</a></li>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#apply">Apply</a></li>
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="" class="discord1">
@@ -46,7 +46,7 @@
             <a href="#slider-img-4" class="button"></a>
         </div>
     </div>
-    <h1 class="title">ABOUT FISHCRAFT</h1>
+    <h1 id="about" class="title">ABOUT FISHCRAFT</h1>
     <p class="about">
         Fishcraft is a 21 and over SMP community with two minecraft servers, 
         one vanilla(Offline atm) and a new one Modded server. We are a fun mature
@@ -54,8 +54,9 @@
         server/map is really new so there's a lot to explore, build and create. I 
         hope you can join us and have a good time playing minecraft with us.
     </p>
-    <h1 class="title">HOW TO JOIN!</h1>
-    <table>
+    <h1 id="apply"class="title">HOW TO JOIN!</h1>
+    <table id="apply">
+        <form action="https://getform.io" method="POST"> 
             <tr>
                 <td class="application">Application</td>
             </tr>
@@ -101,25 +102,33 @@
                 </td>
             </tr>
             <tr>
-                <td>I understand that is mandatory to join Discord if I want to
-                    be part of this community</td>
-                <td>
-                    <input type="checkbox" value="Drawing" />
-                    Agree 
+                <td class="test2">
+                    <div class="checkbox-wrapper-19">
+                        <input type="checkbox" id="cbtest-19"/>
+                        <label for="cbtest-19" class="check-box">
+                    </div>
+                    <div class="understand">
+                        I understand that is mandatory to join Discord if I want to
+                        be part of this community
+                    </div>
                 </td>
             </tr>
             <tr>
                 <td class="test2">
-                    <input type="checkbox" value="Drawing" />
-                    Agree
+                    <div class="checkbox-wrapper-19">
+                        <input type="checkbox" id="cbtest-20"/>
+                        <label for="cbtest-20" class="check-box">
+                    </div>
+                    <div class="understand">
+                        I understand that the effort of my application will
+                        determine my acceptance to join
+                    </div>
                 </td>
-                <td class="test2">I understand that the effort of my application will
-                    determine my acceptance to join </td>
             </tr>
                 <td colspan="3" align="center" class="test1">
-                    <button type="submit">SUBMIT</button>
+                    <!-- <button type="submit">SUBMIT</button> -->
                     <input type="submit" value="APPLY">
-                    <input type="reset" value="Reset">
+                    <input type="reset" value="RESET">
                 </td>
             </tr>
         </form>

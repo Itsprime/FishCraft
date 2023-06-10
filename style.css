@@ -1,24 +1,29 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     text-decoration: none;
     list-style: none;
     font-family: minecraftia;
-    /* outline: red dashed 1px; */
+    outline: red dashed 1px;
 }
 
-body{
+html {
+    scroll-behavior: smooth;
+}
+
+body {
     font-family: Arial, Helvetica, sans-serif;
     background-color: #161718;
     width: auto;
 }
 
-textarea {width:100%;
+textarea {
+    width: 100%;
     padding-left: 5px;
 }
 
-.header{
+.header {
     position: relative;
     width: 100%;
     display: flex;
@@ -29,26 +34,27 @@ textarea {width:100%;
     transition: 0.3s;
 }
 
-.logo{
+
+.logo {
     float: left;
 }
 
-.logo a{
-    color:white;
-    font-size: 35px;
+.logo a {
+    color: white;
+    font-size: 45px;
     line-height: 90px;
     padding: 0 45px;
     font-weight: bold;
     display: block;
 }
 
-.navigation{
+.navigation {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
 
-.menu{
+.menu {
     display: flex;
     justify-content: center;
     flex-direction: row;
@@ -57,12 +63,12 @@ textarea {width:100%;
     transition: 0.5s;
 }
 
-.menu li{
+.menu li {
     list-style-type: none;
 }
 
-.menu li a{
-    color:white;
+.menu li a {
+    color: white;
     text-decoration: none;
     display: block;
     padding: 20px 10px;
@@ -72,14 +78,14 @@ textarea {width:100%;
     transition: 0.3s;
 }
 
-.menu li a:hover{
+.menu li a:hover {
     background: #02589b;
     transition: .8s;
     /* padding: 25px 15px 35px 15px; */
     padding: 25px 10px;
 }
 
-img.discord{
+img.discord {
     padding: 0px;
     display: block;
     width: 3em;
@@ -87,13 +93,13 @@ img.discord{
     -webkit-transition: -webkit-transform 1s;
 }
 
-.menu li .discord1:hover{
+.menu li .discord1:hover {
     padding: 20px 10px;
     background: none;
     -webkit-transform: rotate(360deg) translateZ(0);
 }
 
-.hamburger{
+.hamburger {
     position: relative;
     width: 30px;
     height: 4px;
@@ -105,7 +111,7 @@ img.discord{
 }
 
 .hamburger:before,
-.hamburger:after{
+.hamburger:after {
     content: "";
     position: absolute;
     height: 4px;
@@ -115,16 +121,17 @@ img.discord{
     transition: 0.3s;
 }
 
-.hamburger::before{
+.hamburger::before {
     top: -10px;
     width: 20px;
 }
-.hamburger::after{
+
+.hamburger::after {
     top: 10px;
     width: 25px;
 }
 
-.toggle-menu{
+.toggle-menu {
     position: absolute;
     width: 30px;
     height: 100%;
@@ -133,37 +140,43 @@ img.discord{
     opacity: 0;
 }
 
-.hamburger, .toggle-menu {
+.hamburger,
+.toggle-menu {
     display: none;
 }
 
-.navigation input:checked ~ .hamburger {
+.navigation input:checked~.hamburger {
     background: transparent;
 }
 
-.navigation input:checked ~ .hamburger:before {
+.navigation input:checked~.hamburger:before {
     top: 0;
-    transform:  rotate(-45deg);
+    transform: rotate(-45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .hamburger:after {
+.navigation input:checked~.hamburger:after {
     top: 0;
     transform: rotate(45deg);
     width: 30px;
 }
 
-.navigation input:checked ~ .menu{
+.navigation input:checked~.menu {
     right: 0;
 }
+
 @media screen and (max-width: 992px) {
-    .hamburger, .toggle-menu{
+
+    .hamburger,
+    .toggle-menu {
         display: block;
     }
-    .header{
+
+    .header {
         padding: 10px 20px;
     }
-    .menu{
+
+    .menu {
         justify-content: start;
         flex-direction: column;
         align-items: center;
@@ -175,25 +188,27 @@ img.discord{
         height: 100%;
         padding-top: 100px;
     }
-    .menu li{
-        /* width: 100%; */
-    }
-    .discord1{
+
+    .discord1 {
         padding: 60px;
     }
-    .menu li a, .menu li a:hover{
+
+    .menu li a,
+    .menu li a:hover {
         padding: 30px;
     }
-    .menu li .discord1:hover{
+
+    .menu li .discord1:hover {
         padding: 30px 30px;
     }
-    .logo a{
+
+    .logo a {
         padding-left: 0;
         padding-right: 0;
     }
 }
 
-.container{
+.container {
     position: relative;
 }
 
@@ -203,44 +218,43 @@ img.discord{
     overflow: hidden;
 }
 
-.container .wrapper-holder{
+.container .wrapper-holder {
     display: grid;
     grid-template-columns: repeat(4, 100%);
     height: 100%;
     width: 100%;
-    animation: slider 25s ease-in-out infinite
-     alternate;
+    animation: slider 25s ease-in-out infinite alternate;
 }
 
-.container #slider-img-1{
+.container #slider-img-1 {
     background-image: url("1.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
-.container #slider-img-2{
+.container #slider-img-2 {
     background-image: url("2.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
-.container #slider-img-3{
+.container #slider-img-3 {
     background-image: url("3.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
-.container #slider-img-4{
+.container #slider-img-4 {
     background-image: url("4.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
-.container .button-holder .button{
+.container .button-holder .button {
     background-color: #0169b8;
     width: 15px;
     height: 15px;
@@ -249,31 +263,63 @@ img.discord{
     margin: .3rem;
 }
 
-.container .button-holder{
+.container .button-holder {
     position: absolute;
     left: 40%;
     bottom: 0%;
 }
 
-.button:hover{
+.button:hover {
     box-shadow: 0px 0px 7px 4px #0169b8;
 }
 
-@keyframes slider{
-    0%{transform: translate(0%);}
-    10%{transform: translate(-100%);}
-    20%{transform: translate(-100%);}
-    30%{transform: translate(-200%);}
-    40%{transform: translate(-200%);}
-    50%{transform: translate(-200%);}
-    60%{transform: translate(-300%);}
-    70%{transform: translate(-300%);}
-    80%{transform: translate(-300%);}
-    90%{transform: translate(0%);}
-    100%{transform: translate(0%);}
+@keyframes slider {
+    0% {
+        transform: translate(0%);
+    }
+
+    10% {
+        transform: translate(-100%);
+    }
+
+    20% {
+        transform: translate(-100%);
+    }
+
+    30% {
+        transform: translate(-200%);
+    }
+
+    40% {
+        transform: translate(-200%);
+    }
+
+    50% {
+        transform: translate(-200%);
+    }
+
+    60% {
+        transform: translate(-300%);
+    }
+
+    70% {
+        transform: translate(-300%);
+    }
+
+    80% {
+        transform: translate(-300%);
+    }
+
+    90% {
+        transform: translate(0%);
+    }
+
+    100% {
+        transform: translate(0%);
+    }
 }
 
-p.about{
+p.about {
     font-weight: normal;
     font-style: oblique;
     color: white;
@@ -283,64 +329,49 @@ p.about{
     margin-right: 2%;
     margin-bottom: 3%;
     padding: 2%;
-    border-radius: 25px;
     font-size: clamp(12px, 1rem, 2rem);
     /* background-color: #0082e6; */
 }
 
-/* table{
-    margin-left: auto;
-    margin-right: auto;
-    margin-bottom: 2%;
-    color: black;
-    border-radius: 25px;
-    background-color: #0169b8;
-} */
-
 /* Minecraft Chest UI - https://codepen.io/aaronsoto/pen/bGEXObJ */
 
-table{
+table {
     font-family: minecraftia;
     font-weight: bold;
     font-style: normal;
-    /* justify-content: center;
-    align-items: center;  
-    position: relative;
-    flex-direction: column;
-    display: inline-flex; */
-    /* margin: 0% auto 3% auto; */
     margin-right: auto;
     margin-left: auto;
-    /* margin: top right bottom left*/
     height: auto;
     width: clamp(30%, 80%, 90%);
     padding-bottom: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
     background-color: #c6c6c6;
     box-shadow: 8px 0 0 0 #555555,
-    0 8px 0 0 #555555,
-    4px 4px 0 0 #555555,
-    -8px 0 0 0 #e8e8e8,
-    0 -8px 0 0 #e8e8e8,
-    -4px -4px 0 0 #e8e8e8,
-    0 0 0 4px #b5b4b5,
-    4px 8px 0 0 #555,
-    8px 4px 0 0 #555,
-    -4px -8px 0 0 #e8e8e8,
-    -8px -4px 0 0 #e8e8e8,
-    8px -4px 0 0 #000,
-    4px -8px 0 0 #000,
-    -8px 4px 0 0 #000,
-    -4px 8px 0 0 #000,
-    -8px -8px 0 0 #000,
-    8px 8px 0 0 #000,
-    -12px 0 0 0 #000,
-    -12px -4px 0 0 #000,
-    12px 0 0 0 #000,
-    12px 4px 0 0 #000,
-    0 -12px 0 0 #000,
-    -4px -12px 0 0 #000,
-    0 12px 0 0 #000,
-    4px 12px 0 0 #000;
+        0 8px 0 0 #555555,
+        4px 4px 0 0 #555555,
+        -8px 0 0 0 #e8e8e8,
+        0 -8px 0 0 #e8e8e8,
+        -4px -4px 0 0 #e8e8e8,
+        0 0 0 4px #b5b4b5,
+        4px 8px 0 0 #555,
+        8px 4px 0 0 #555,
+        -4px -8px 0 0 #e8e8e8,
+        -8px -4px 0 0 #e8e8e8,
+        8px -4px 0 0 #000,
+        4px -8px 0 0 #000,
+        -8px 4px 0 0 #000,
+        -4px 8px 0 0 #000,
+        -8px -8px 0 0 #000,
+        8px 8px 0 0 #000,
+        -12px 0 0 0 #000,
+        -12px -4px 0 0 #000,
+        12px 0 0 0 #000,
+        12px 4px 0 0 #000,
+        0 -12px 0 0 #000,
+        -4px -12px 0 0 #000,
+        0 12px 0 0 #000,
+        4px 12px 0 0 #000;
     /* color: white; */
     text-shadow: 2px 2px #686868;
 }
@@ -355,52 +386,55 @@ table{
     margin-left: auto;
     margin-right: auto;
     margin-bottom: 5%;
-    /* cursor: pointer; */
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
-	image-rendering: pixelated;
+    image-rendering: pixelated;
     margin-right: 20%;
     margin-left: 20%;
     text-align: center;
     image-rendering: pixelated;
-	border: 2px solid #000;
+    border: 2px solid #000;
     color: #DDD;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
 }
-@media screen and (max-width: 600px) {
-    table{
-        width: 85%; 
-        }
 
-    td{
-        /* background-color: green; */
+@media screen and (max-width: 600px) {
+    table {
+        width: 85%;
+    }
+
+    td {
         font-size: .8em;
         padding: 0%;
     }
-    .title{
+
+    .title {
         font-size: 24px;
     }
 }
 
-input[type="submit"]:hover, input[type="reset"]:hover{
-    /* why is this backgroundd-color not working?? */
+input[type="submit"]:hover,
+input[type="reset"]:hover {
+    /* why is this backgroundd-color not working?? z-index not working*/
     background-color: rgba(100, 100, 255, .45);
     text-shadow: 2px 2px #202013CC;
     color: #FFFFA0;
+
 }
 
-input[type="submit"], input[type="reset"]{
+input[type="submit"],
+input[type="reset"] {
     width: 100px;
     height: 30px;
     padding-bottom: 4%;
     font-size: large;
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
-	image-rendering: pixelated;
+    image-rendering: pixelated;
     margin-right: 5%;
-    margin-left:auto;
+    margin-left: auto;
     text-align: center;
     image-rendering: pixelated;
-	border: 2px solid #000;
+    border: 2px solid #000;
     color: #DDD;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
@@ -412,24 +446,174 @@ input[type="submit"], input[type="reset"]{
     }
 }
 
-td{
+td {
     display: grid;
     margin-bottom: 0.2rem;
-    /* font-weight: 1em; */
-    /* padding: 1%; */
-    /* font-size: clamp(5px, 1em, 2em); */
 }
 
-.test2{
+.test2 {
     display: flex;
+    align-items: center;
 }
 
-.test1{
+.test1 {
     display: block;
 }
 
-tr{
-    /* max-width: 25%;
-    min-width: 35%; */
+.understand{
+    padding-left: 15px;
 }
 
+.checkbox-wrapper-19 {
+    box-sizing: border-box;
+    /* --background-color: #fff; */
+    --checkbox-height: 25px;
+    padding-right: 10px;
+    padding-top: 5px;
+  }
+
+  @-moz-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @-webkit-keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothabottomcheck-19 {
+    0% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) / 2);
+    }
+  }
+
+  @keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-webkit-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  @-moz-keyframes dothatopcheck-19 {
+    0% {
+      height: 0;
+    }
+    50% {
+      height: 0;
+    }
+    100% {
+      height: calc(var(--checkbox-height) * 1.2);
+    }
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox] {
+    display: none;
+  }
+
+  .checkbox-wrapper-19 .check-box {
+    height: var(--checkbox-height);
+    width: var(--checkbox-height);
+    background-color: transparent;
+    border: calc(var(--checkbox-height) * .1) solid #000;
+    border-radius: 5px;
+    position: relative;
+    display: inline-block;
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    -moz-transition: border-color ease 0.2s;
+    -o-transition: border-color ease 0.2s;
+    -webkit-transition: border-color ease 0.2s;
+    transition: border-color ease 0.2s;
+    cursor: pointer;
+  }
+  .checkbox-wrapper-19 .check-box::before,
+  .checkbox-wrapper-19 .check-box::after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    position: absolute;
+    height: 0;
+    width: calc(var(--checkbox-height) * .2);
+    background-color: #34b93d;
+    display: inline-block;
+    -moz-transform-origin: left top;
+    -ms-transform-origin: left top;
+    -o-transform-origin: left top;
+    -webkit-transform-origin: left top;
+    transform-origin: left top;
+    border-radius: 5px;
+    content: " ";
+    -webkit-transition: opacity ease 0.5;
+    -moz-transition: opacity ease 0.5;
+    transition: opacity ease 0.5;
+  }
+  .checkbox-wrapper-19 .check-box::before {
+    top: calc(var(--checkbox-height) * .72);
+    left: calc(var(--checkbox-height) * .41);
+    box-shadow: 0 0 0 calc(var(--checkbox-height) * .05) var(--background-color);
+    -moz-transform: rotate(-135deg);
+    -ms-transform: rotate(-135deg);
+    -o-transform: rotate(-135deg);
+    -webkit-transform: rotate(-135deg);
+    transform: rotate(-135deg);
+  }
+  .checkbox-wrapper-19 .check-box::after {
+    top: calc(var(--checkbox-height) * .37);
+    left: calc(var(--checkbox-height) * .05);
+    -moz-transform: rotate(-45deg);
+    -ms-transform: rotate(-45deg);
+    -o-transform: rotate(-45deg);
+    -webkit-transform: rotate(-45deg);
+    transform: rotate(-45deg);
+  }
+
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box,
+  .checkbox-wrapper-19 .check-box.checked {
+    border-color: #34b93d;
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::after,
+  .checkbox-wrapper-19 .check-box.checked::after {
+    height: calc(var(--checkbox-height) / 2);
+    -moz-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -o-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    -webkit-animation: dothabottomcheck-19 0.2s ease 0s forwards;
+    animation: dothabottomcheck-19 0.2s ease 0s forwards;
+  }
+  .checkbox-wrapper-19 input[type=checkbox]:checked + .check-box::before,
+  .checkbox-wrapper-19 .check-box.checked::before {
+    height: calc(var(--checkbox-height) * 1.2);
+    -moz-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -o-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    -webkit-animation: dothatopcheck-19 0.4s ease 0s forwards;
+    animation: dothatopcheck-19 0.4s ease 0s forwards;
+  }
