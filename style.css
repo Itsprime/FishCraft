@@ -6,6 +6,7 @@
     list-style: none;
     font-family: minecraftia;
     outline: red dashed 1px;
+    cursor: default;
 }
 
 html {
@@ -68,6 +69,7 @@ textarea {
 }
 
 .menu li a {
+    cursor: pointer;
     color: white;
     text-decoration: none;
     display: block;
@@ -413,6 +415,10 @@ table {
     }
 }
 
+input, textarea{
+    cursor: text;
+}
+
 input[type="submit"]:hover,
 input[type="reset"]:hover {
     /* why is this backgroundd-color not working?? z-index not working*/
@@ -424,6 +430,7 @@ input[type="reset"]:hover {
 
 input[type="submit"],
 input[type="reset"] {
+    cursor: pointer;
     width: 100px;
     height: 30px;
     padding-bottom: 4%;
