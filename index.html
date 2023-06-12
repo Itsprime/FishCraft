@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="eng" dir="ltr">
+
 <head>
     <meta charset="utf-8">
     <title>FishCraft</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
-</style>
+    </style>
 </head>
 <!--this is an example comment-->
+
 <body id="home">
     <header class="header">
         <div class="logo">
@@ -24,8 +26,8 @@
                 <li><a href="#">Gallery</a></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="" class="discord1">
-                    <!-- https://discord.gg/Qr6eNDguFy -->
-                    <img class="discord" src= "discord2.svg" alt="Discord"/>
+                        <!-- https://discord.gg/Qr6eNDguFy -->
+                        <img class="discord" src="discord2.svg" alt="Discord" />
                     </a></li>
             </ul>
         </div>
@@ -48,38 +50,66 @@
     </div>
     <h1 id="about" class="title">ABOUT US</h1>
     <p class="about">
-        Fishcraft is a 21 and over SMP community with two minecraft servers, 
+        Fishcraft is a 21 and over SMP community with two minecraft servers,
         one vanilla(Offline atm) and a new one Modded server. We are a fun mature
-        community and we are looking for like-minded people to hang out with. The 
-        server/map is really new so there's a lot to explore, build and create. I 
+        community and we are looking for like-minded people to hang out with. The
+        server/map is really new so there's a lot to explore, build and create. I
         hope you can join us and have a good time playing minecraft with us.
 
-        We use Discord as our primary form of communication. All of the information 
+        We use Discord as our primary form of communication. All of the information
         about important announcements, server events, and fun banter happens there!
     </p>
-    <h1 id="apply"class="title">HOW TO JOIN!</h1>
+    <h1 id="faq" class="title">Frequently Asked Questions</h1>
+    <div class="faq-content">
+        <div class="faq-question">
+            <input id="q1" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q1" class="panel-title">What is the meaning of life?</label>
+            <div class="panel-content">42</div>
+        </div>
+
+        <div class="faq-question">
+            <input id="q2" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q2" class="panel-title">What’s the IP?</label>
+            <div class="panel-content">We are a whitelisted server so to acquire access to it you have to apply via <a href="#apply">application form</a> under faq, 
+                <a href="">MinecraftForums</a> or Subreddit threads we post weekly.
+            </div>
+          </div>
+
+          <div class="faq-question">
+            <input id="q3" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q3" class="panel-title">Can I join if I’m under 21?
+            </label>
+            <div class="panel-content">A woodchuck would chuck all the wood he could chuck, if a woodchuck could chuck wood!</div>
+          </div>
+
+    </div>
+    <h1 id="apply" class="title">HOW TO JOIN!</h1>
     <table id="apply">
-        <form action="https://getform.io" method="POST"> 
+        <form action="https://getform.io" method="POST">
             <tr>
                 <td class="application">Application</td>
             </tr>
             <tr>
                 <td>Age</td>
                 <td>
-                    <input type="number" name="Age" maxlength="2" placeholder="21 years or older" required/>
+                    <input type="number" name="Age" maxlength="2" placeholder="21 years or older" required />
                 </td>
             </tr>
-                <td>Minecraft Name</td>
-                <td>
-                    <input type="text" name="minecraft-name" maxlength="16" required/>
-                </td>
+            <td>Minecraft Name</td>
+            <td>
+                <input type="text" name="minecraft-name" maxlength="16" required />
+            </td>
             </tr>
             <tr>
                 <td>Discord Name</td>
                 <td>
-                    <input type="text" name="discord-name" maxlength="30" placeholder="Example: pwime or Prime#6666" required/>
+                    <input type="text" name="discord-name" maxlength="30" placeholder="Example: pwime or Prime#6666"
+                        required />
                 </td>
-                </tr>
+            </tr>
             <tr>
                 <td>Why do you think you're a good fit for this community?</td>
                 <td>
@@ -95,7 +125,8 @@
             <tr>
                 <td>What do you think about our server rules?</td>
                 <td>
-                    <textarea rows="4" cols="30"  type="text" name="rules"  required placeholder="No Griefing/Stealing. (Respectable pranks are allowed)&#10;Must be 21 and over&#10;No cheating or hacked clients."></textarea>
+                    <textarea rows="4" cols="30" type="text" name="rules" required
+                        placeholder="No Griefing/Stealing. (Respectable pranks are allowed)&#10;Must be 21 and over&#10;No cheating or hacked clients."></textarea>
                 </td>
             </tr>
             <tr>
@@ -107,7 +138,7 @@
             <tr>
                 <td class="test2">
                     <div class="checkbox-wrapper-19">
-                        <input type="checkbox" id="cbtest-19" required/>
+                        <input type="checkbox" id="cbtest-19" required />
                         <label for="cbtest-19" class="check-box">
                     </div>
                     <div class="understand">
@@ -119,7 +150,7 @@
             <tr>
                 <td class="test2">
                     <div class="checkbox-wrapper-19">
-                        <input type="checkbox" id="cbtest-20" required/>
+                        <input type="checkbox" id="cbtest-20" required />
                         <label for="cbtest-20" class="check-box">
                     </div>
                     <div class="understand">
@@ -128,14 +159,15 @@
                     </div>
                 </td>
             </tr>
-                <td colspan="3" align="center" class="test1">
-                    <!-- <button type="submit">SUBMIT</button> -->
-                    <input type="submit" value="APPLY" required>
-                    <input type="reset" value="RESET">
-                </td>
+            <td colspan="3" align="center" class="test1">
+                <!-- <button type="submit">SUBMIT</button> -->
+                <input type="submit" value="APPLY" required>
+                <input type="reset" value="RESET">
+            </td>
             </tr>
         </form>
     </table>
     <div class="test">test</div>
 </body>
+
 </html>
