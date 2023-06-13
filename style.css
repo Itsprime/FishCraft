@@ -322,25 +322,21 @@ img.discord {
 }
 
 p.about {
-    font-weight: normal;
-    font-style: oblique;
     color: white;
-    font-weight: bold;
     margin-top: 3%;
     margin-left: 2%;
     margin-right: 2%;
     margin-bottom: 3%;
     padding: 2%;
-    font-size: clamp(12px, 1rem, 2rem);
+    font-size: clamp(12px, 20px, 2rem);
     /* background-color: #0082e6; */
 }
 
 /* Minecraft Chest UI - https://codepen.io/aaronsoto/pen/bGEXObJ */
 
 table {
-    font-family: minecraftia;
     font-weight: bold;
-    font-style: normal;
+    font-size: 20px;
     margin-right: auto;
     margin-left: auto;
     height: auto;
@@ -375,7 +371,7 @@ table {
         0 12px 0 0 #000,
         4px 12px 0 0 #000;
     /* color: white; */
-    text-shadow: 2px 2px #686868;
+    /* text-shadow: 2px 2px #686868; */
 }
 
 .title {
@@ -384,10 +380,10 @@ table {
     font-weight: normal;
     font-style: normal;
     padding-bottom: 4px;
-    margin-top: 2%;
+    margin-top: 4%;
+    margin-bottom: 4%;
     margin-left: auto;
     margin-right: auto;
-    margin-bottom: 5%;
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
     image-rendering: pixelated;
     margin-right: 20%;
@@ -455,8 +451,13 @@ input[type="reset"] {
 }
 
 td {
+    font-size: 20px;
     display: grid;
     margin-bottom: 0.2rem;
+}
+
+td > input, textarea{
+    font-size: 16px;
 }
 
 .test2 {
@@ -641,7 +642,10 @@ td {
 }
 
 .faq-content {
-    margin: 0 20px;
+    /* font-weight: bold; */
+    margin-left: auto;
+    margin-right: auto;
+    width: clamp(30%, 80%, 90%);
     background-color: #c6c6c6;
     box-shadow: 8px 0 0 0 #555555,
     0 8px 0 0 #555555,
@@ -669,7 +673,7 @@ td {
     0 12px 0 0 #000,
     4px 12px 0 0 #000;
     /* color: white; */
-    text-shadow: 2px 2px #686868;
+    /* text-shadow: 2px 2px #686868; */
 }
 
 .faq-question {
@@ -688,10 +692,13 @@ td {
 }
 
 .panel-content {
-    background-color: #c6c6c6;
+    background-color: #919191;
+    box-shadow: 2px 2px 0 2px #e8e8e8,
+    -2px -2px 0 2px #555,
+    0 0 0 4px #8b8b8b;
     font-size: 20px;
     padding: 0px 14px;
-    margin: 0 45px;
+    margin: 8px 45px;
     height: 0;
     overflow: hidden;
     /* z-index: -1; */
@@ -706,7 +713,7 @@ td {
 .panel:checked~.panel-content {
     height: auto;
     opacity: 1;
-    padding: 14px;
+    padding: 6px;
 }
 
 .plus {
