@@ -23,6 +23,7 @@
                 <li><a href="#about">About</a></li>
                 <li><a href="#apply">Apply</a></li>
                 <li><a href="#">Map</a></li>
+                <li><a href="https://ko-fi.com/bioscloud">Donate</a></li>
                 <li><a href="" class="discord1">
                         <!-- https://discord.gg/Qr6eNDguFy -->
                         <img class="discord" src="discord2.svg" alt="Discord" />
@@ -52,9 +53,9 @@
     </div>
     <h1 id="about" class="title">ABOUT US</h1>
     <p class="about">
-        Fishcraft is a 21+ Minecraft server with the goal to create a fun and relaxed getaway for 
+        Fishcraft is a 21+ Minecraft server with the goal to create a fun and relaxed getaway for
         the community. We are a fun and mature bunch and we are looking for like-minded people to
-         hang out with. 
+        hang out with.
         <br>
         <br>
         We use Discord as our primary form of communication. All of the information
@@ -66,13 +67,13 @@
             <input id="q1" type="checkbox" class="panel">
             <div class="plus">+</div>
             <label for="q1" class="panel-title">What type of server do you run?</label>
-            <div class="panel-content">We currently have a lightly Modded SMP server,  
+            <div class="panel-content">We currently have a lightly Modded SMP server,
                 which is relatively new with a lot of land yet to be explored.
-                 The main mods include Create 0.5, Biomes You'll Go, Farmer's Delight and Chipped.
-                 <br>
-                 <br>
-                 We have also hosted a long-running vanilla SMP for the past couple 
-                 of years and might start up a new one if there's sufficient interest.
+                The main mods include Create 0.5, Biomes You'll Go, Farmer's Delight and Chipped.
+                <br>
+                <br>
+                We have also hosted a long-running vanilla SMP for the past couple
+                of years and might start up a new one if there's sufficient interest.
             </div>
         </div>
 
@@ -81,52 +82,68 @@
             <div class="plus">+</div>
             <label for="q2" class="panel-title">What’s the IP?</label>
             <div class="panel-content">We are a whitelisted server so to acquire access to it you
-                 have to apply via <a href="#apply">application form</a> under faq, 
+                have to apply via <a href="#apply">application form</a> under faq,
                 <a href="">MinecraftForums</a> or Subreddit threads we post weekly.
             </div>
-          </div>
+        </div>
 
-          <div class="faq-question">
+        <div class="faq-question">
             <input id="q3" type="checkbox" class="panel">
             <div class="plus">+</div>
             <label for="q3" class="panel-title">How often do you update/refresh the MC world?</label>
             <div class="panel-content">We are currently playing in 1.18.2 in the modded server.
-                 We do not have plans to upgrade the world itself but might consider updating when
-                  all the mods are available for 1.20.
+                We do not have plans to upgrade the world itself but might consider updating when
+                all the mods are available for 1.20.
             </div>
-          </div>
-          
-          <div class="faq-question">
+        </div>
+
+        <div class="faq-question">
+            <input id="q7" type="checkbox" class="panel">
+            <div class="plus">+</div>
+            <label for="q7" class="panel-title">Is there a cost to join?</label>
+            <div class="panel-content">There is no cost to join and although donations are
+                appreciated, they are in no way mandatory or necessary.
+                <br>
+                <br>
+                If you are enjoying your time in the server and would like to support us, please
+                check out our <a href="https://ko-fi.com/bioscloud">Donation Page</a>. All donations are used to help
+                cover for server
+                hosting costs.
+            </div>
+        </div>
+
+        <div class="faq-question">
             <input id="q4" type="checkbox" class="panel">
             <div class="plus">+</div>
-            <label for="q4" class="panel-title">I would like to have [insert mod name] in the 
+            <label for="q4" class="panel-title">I would like to have [insert mod name] in the
                 server too, is that ok?</label>
             <div class="panel-content">We definitely welcome feedback and suggestions from our
-                 members to improve your experience! In our current modded world we are trying
-                  to keep it as light as possible to keep it accessible to a wider player base.
+                members to improve your experience! In our current modded world we are trying
+                to keep it as light as possible to keep it accessible to a wider player base.
             </div>
-          </div>
+        </div>
 
-          <div class="faq-question">
+        <div class="faq-question">
             <input id="q5" type="checkbox" class="panel">
             <div class="plus">+</div>
             <label for="q5" class="panel-title">Where is the server hosted?</label>
             <div class="panel-content">The server is hosted in US. We have players from around
-                 the globe and have had no issues/latency reported.</div>
-          </div>
-          
-          <div class="faq-question">
+                the globe and have had no issues/latency reported.</div>
+        </div>
+
+        <div class="faq-question">
             <input id="q6" type="checkbox" class="panel">
             <div class="plus">+</div>
             <label for="q6" class="panel-title">Can I join if I’m under 21?
             </label>
-            <div class="panel-content">We can accept 20yr old applicatns but it will 
+            <div class="panel-content">We can accept 20yr old applicatns but it will
                 depend on your application form as well</div>
-          </div>
+        </div>
     </div>
     <h1 id="apply" class="title">HOW TO JOIN!</h1>
     <table id="apply">
-        <form action="https://getform.io" method="POST">
+        <form method="post"
+            action="https://discord.com/api/webhooks/1118345624945959003/HEV6CTDwtm6MXcqiKq8Uosk89IvrTMdeBLD0ZGfTE-2_PVxyb6A6FICmrk1qictr0qND">
             <tr>
                 <td class="application">Application</td>
             </tr>
@@ -203,10 +220,27 @@
                 <!-- <input type="reset" value="RESET"> -->
             </td>
             </tr>
+            <script>
+                const getAge = document.getElementByID('Age');
+                const getMinecraftName = document.getElementByID('minecraft-name');
+                fetch("https://discord.com/api/webhooks/1118345624945959003/HEV6CTDwtm6MXcqiKq8Uosk89IvrTMdeBLD0ZGfTE-2_PVxyb6A6FICmrk1qictr0qND", {
+                    method: "POST", 
+                    body: JSON.stringify({
+                        age: getAge,
+                        getMinecraftName: getMinecraftName,
+                        userId: 1,
+                        title: "Fix my bugs",
+                        completed: false
+                    }),
+                    headers: {
+                        "Content-type": "application/json; charset=UTF-8"
+                    }
+                });
+            </script>
         </form>
     </table>
 
-    
+
 </body>
 
 </html>
