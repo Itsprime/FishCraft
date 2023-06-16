@@ -226,14 +226,12 @@
                 fetch("https://discord.com/api/webhooks/1119140845199818793/zvNMwBFvuCE2VoOYecpuDV6BieE-CLWNP7LBgRRBhMr6LfGccFOCiMrq1l_epRdymVG3", {
                     method: "POST",
                     body: JSON.stringify({
-                        "content": "testtestsetsetsetset setae213423 dfadf",
-                        "embeds": null,
-                        "attachments": []
-                        // age: getAge,
-                        // getMinecraftName: getMinecraftName,
-                        // userId: 1,
-                        // title: "Fix my bugs",
-                        // completed: false
+                        "content": "Message Received",
+                        "tts": false,
+                        "embeds":[{
+                            "title":"Contact Form",
+                            "description":test
+                        }]
                     }),
                     headers: {
                         "Content-type": "application/json; charset=UTF-8"
