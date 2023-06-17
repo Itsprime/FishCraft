@@ -141,8 +141,8 @@
         </div>
     </div>
     <h1 id="apply" class="title">HOW TO JOIN!</h1>
-    <table id="apply">
-        <form onsubmit="submitForm()">
+    <form onsubmit="return submitForm()">
+        <table id="apply">
             <tr>
                 <td class="application">Application</td>
             </tr>
@@ -220,13 +220,13 @@
             </td>
             </tr>
             <script>
-                function submitForm() {
-                    const getAge = document.getElementByID('Age');
-                    const getMinecraftName = document.getElementByID('minecraft-name');
+                submitForm = () => {
+                    const getAge = document.getElementById('Age')[0].value
+                    const getMinecraftName = document.getElementsByName('minecraft-name')[0].value
                     fetch("https://discord.com/api/webhooks/1119486707826446438/TFa7Hn1kATFkNpe8aUQLZZhFuPVvk-KxG5X16waLV8xeMPS6WiOh59mhawZGeRoIWtvI", {
                         method: "POST",
                         body: JSON.stringify({
-                            "content": "Message Received",
+                            "content": `New application!\nMinecraft Name: ${getMinecraftName}\nAge: ${getAge}\n`,
                             "tts": false,
                             "embeds": [{
                                 "title": "Contact Form",
@@ -237,10 +237,11 @@
                             "Content-type": "application/json; charset=UTF-8"
                         }
                     });
+                    return false
                 }
             </script>
-        </form>
-    </table>
+        </table>
+    </form>
 </body>
 
 </html>
