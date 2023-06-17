@@ -142,8 +142,7 @@
     </div>
     <h1 id="apply" class="title">HOW TO JOIN!</h1>
     <table id="apply">
-        <form method="post"
-            action="https://discord.com/api/webhooks/1119140845199818793/zvNMwBFvuCE2VoOYecpuDV6BieE-CLWNP7LBgRRBhMr6LfGccFOCiMrq1l_epRdymVG3">
+        <form onsubmit="submitForm()">
             <tr>
                 <td class="application">Application</td>
             </tr>
@@ -221,22 +220,24 @@
             </td>
             </tr>
             <script>
-                const getAge = document.getElementByID('Age');
-                const getMinecraftName = document.getElementByID('minecraft-name');
-                fetch("https://discord.com/api/webhooks/1119140845199818793/zvNMwBFvuCE2VoOYecpuDV6BieE-CLWNP7LBgRRBhMr6LfGccFOCiMrq1l_epRdymVG3", {
-                    method: "POST",
-                    body: JSON.stringify({
-                        "content": "Message Received",
-                        "tts": false,
-                        "embeds":[{
-                            "title":"Contact Form",
-                            "description":test
-                        }]
-                    }),
-                    headers: {
-                        "Content-type": "application/json; charset=UTF-8"
-                    }
-                });
+                function submitForm() {
+                    const getAge = document.getElementByID('Age');
+                    const getMinecraftName = document.getElementByID('minecraft-name');
+                    fetch("https://discord.com/api/webhooks/1119486707826446438/TFa7Hn1kATFkNpe8aUQLZZhFuPVvk-KxG5X16waLV8xeMPS6WiOh59mhawZGeRoIWtvI", {
+                        method: "POST",
+                        body: JSON.stringify({
+                            "content": "Message Received",
+                            "tts": false,
+                            "embeds": [{
+                                "title": "Contact Form",
+                                "description": "test"
+                            }]
+                        }),
+                        headers: {
+                            "Content-type": "application/json; charset=UTF-8"
+                        }
+                    });
+                }
             </script>
         </form>
     </table>
