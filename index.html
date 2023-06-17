@@ -223,7 +223,7 @@
                 function submitForm() {
                     const getAge = document.getElementsByName('Age')[0].value
                     const getMinecraftName = document.getElementsByName('minecraft-name')[0].value
-                    const getUUID = fetch(`https://api.mojang.com/users/profiles/minecraft/${getMinecraftName}`);
+                    // const getUUID = fetch(`https://api.mojang.com/users/profiles/minecraft/${getMinecraftName}`);
                     const getDiscordtName = document.getElementsByName('discord-name')[0].value
                     const getFitForCommunity = document.getElementsByName('fit-for-community')[0].value
                     const getIdealMinecraftCommunity = document.getElementsByName('ideal-minecraft-community')[0].value
@@ -267,12 +267,12 @@
                                         }
                                     ],
                                     "footer": {
-                                        "text": `UUID: bafe2acf-9bf9-4a37-b21e-db8c583c6261`
+                                        "text": `https://mc-heads.net/minecraft/profile/${getMinecraftName}`
                                     }
                                 }
                             ],
                             "username": "NEW APPLICATION",
-                            "avatar_url": `https://crafatar.com/renders/head/bafe2acf-9bf9-4a37-b21e-db8c583c6261`,
+                            "avatar_url": `https://mc-heads.net/avatar/${getMinecraftName}`,
                             "attachments": []
                         }),
                         headers: {
