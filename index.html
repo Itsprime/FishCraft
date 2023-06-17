@@ -223,7 +223,7 @@
                 function submitForm() {
                     const getAge = document.getElementsByName('Age')[0].value
                     const getMinecraftName = document.getElementsByName('minecraft-name')[0].value
-                    const uuid = fetch(`https://api.mojang.com/users/profiles/minecraft/${getMinecraftName}`);
+                    const getUUID = fetch(`https://api.mojang.com/users/profiles/minecraft/${getMinecraftName}`)[0].value
                     const getDiscordtName = document.getElementsByName('discord-name')[0].value
                     const getFitForCommunity = document.getElementsByName('fit-for-community')[0].value
                     const getIdealMinecraftCommunity = document.getElementsByName('ideal-minecraft-community')[0].value
@@ -235,11 +235,10 @@
                             "content": "",
                             "embeds": [
                                 {
-                                    // "title": "NEW APPLICATION",
                                     "color": 7140608,
                                     "fields": [
                                         {
-                                            "name": "Age?",
+                                            "name": "Age:",
                                             "value": `${getAge}`
                                         },
                                         {
@@ -251,29 +250,29 @@
                                             "value": `${getDiscordtName}`
                                         },
                                         {
-                                            "name": "Why do you think you're a good fit for this community?",
+                                            "name": "Why do you think you're a good fit for this community?:",
                                             "value": `${getFitForCommunity}`
                                         },
                                         {
-                                            "name": "What do you look for in an ideal minecraft community?",
+                                            "name": "What do you look for in an ideal minecraft community?:",
                                             "value": `${getIdealMinecraftCommunity}`
                                         },
                                         {
-                                            "name": "What do you think about our server rules?",
+                                            "name": "What do you think about our server rules?:",
                                             "value": `${getRules}`
                                         },
                                         {
-                                            "name": "Tell us little about yourself!",
+                                            "name": "Tell us little about yourself!:",
                                             "value": `${getAboutYourSelf}`
                                         }
                                     ],
                                     "footer": {
-                                        "text": `UUID: ${uuid.id}`
+                                        "text": `UUID: ${getUUID.id}`
                                     }
                                 }
                             ],
                             "username": "NEW APPLICATION",
-                            "avatar_url": `https://crafatar.com/renders/head/${uuid.id}`,
+                            "avatar_url": `https://crafatar.com/renders/head/${getUUID.id}`,
                             "attachments": []
                         }),
                         headers: {
