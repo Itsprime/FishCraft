@@ -223,13 +223,18 @@
                 function submitForm() {
                     const getAge = document.getElementsByName('Age')[0].value
                     const getMinecraftName = document.getElementsByName('minecraft-name')[0].value
+                    const getDiscordtName = document.getElementsByName('discord-name')[0].value
+                    const getFitForCommunity = document.getElementsByName('fit-for-community')[0].value
+                    const getIdealMinecraftCommunity = document.getElementsByName('ideal-minecraft-community')[0].value
+                    const getRules = document.getElementsByName('rules')[0].value
+                    const getAboutYourSelf = document.getElementsByName('about-yourself')[0].value
                     fetch("https://discord.com/api/webhooks/1119486707826446438/TFa7Hn1kATFkNpe8aUQLZZhFuPVvk-KxG5X16waLV8xeMPS6WiOh59mhawZGeRoIWtvI", {
                         method: "POST",
                         body: JSON.stringify({
                             "content": "",
                             "embeds": [
                                 {
-                                    "title": "NEW APPLICATION",
+                                    // "title": "NEW APPLICATION",
                                     "color": 7140608,
                                     "fields": [
                                         {
@@ -242,23 +247,23 @@
                                         },
                                         {
                                             "name": "Discord Name:",
-                                            "value": "here1"
+                                            "value": `${getDiscordtName}`
                                         },
                                         {
                                             "name": "Why do you think you're a good fit for this community?",
-                                            "value": "test"
+                                            "value": `${getFitForCommunity}`
                                         },
                                         {
                                             "name": "What do you look for in an ideal minecraft community?",
-                                            "value": "testset"
+                                            "value": `${getIdealMinecraftCommunity}`
                                         },
                                         {
                                             "name": "What do you think about our server rules?",
-                                            "value": "testsdfsdf"
+                                            "value": `${getRules}`
                                         },
                                         {
                                             "name": "Tell us little about yourself!",
-                                            "value": "testset"
+                                            "value": `${getAboutYourSelf}`
                                         }
                                     ]
                                 }
