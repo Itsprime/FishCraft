@@ -449,7 +449,6 @@ input[type="reset"] {
     margin-right: 5%;
     margin-left: auto;
     text-align: center;
-    image-rendering: pixelated;
     border: 2px solid #000;
     color: #DDD;
     text-shadow: 2px 2px #000A;
@@ -761,3 +760,31 @@ td > input, textarea{
     cursor: pointer;
     text-decoration: underline;
 }
+
+footer{
+    font-weight: bold;
+    height: 55px;
+    text-align: center;
+    background-color: #02589b;
+    margin-top: 5%;
+}
+
+#myBtn {
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: red; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Add a mouse pointer on hover */
+    padding: 10px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
+    image-rendering: pixelated;
+    border: 2px solid #000;
+    color: #DDD;
+    text-shadow: 2px 2px #000A;
+    box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
+  }
+  
+  #myBtn:hover {
+    background-color: #555; /* Add a dark-grey background on hover */
+  }
