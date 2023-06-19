@@ -82,7 +82,6 @@ textarea {
 .menu li a:hover {
     background: #02589b;
     transition: .8s;
-    /* padding: 25px 15px 35px 15px; */
     padding: 25px 10px;
 }
 
@@ -228,42 +227,42 @@ img.discord {
 }
 
 .container #slider-img-1 {
-    background-image: url("1.png");
+    background-image: url("images/1.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
 .container #slider-img-2 {
-    background-image: url("2.png");
+    background-image: url("images/2.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
 .container #slider-img-3 {
-    background-image: url("3.png");
+    background-image: url("images/3.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
 .container #slider-img-4 {
-    background-image: url("4.png");
+    background-image: url("images/4.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
 .container #slider-img-5 {
-    background-image: url("5.png");
+    background-image: url("images/5.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
 }
 
 .container #slider-img-6 {
-    background-image: url("6.png");
+    background-image: url("images/6.png");
     background-position-x: center;
     background-position-y: center;
     background-size: cover;
@@ -341,7 +340,6 @@ p.about {
     width: clamp(30%, 80%, 90%);
     padding: 2%;
     font-size: clamp(12px, 20px, 2rem);
-    /* background-color: #0082e6; */
 }
 
 /* Minecraft Chest UI - https://codepen.io/aaronsoto/pen/bGEXObJ */
@@ -653,7 +651,6 @@ td > input, textarea{
 }
 
 .faq-content {
-    /* font-weight: bold; */
     margin-left: auto;
     margin-right: auto;
     width: clamp(30%, 80%, 90%);
@@ -763,28 +760,27 @@ td > input, textarea{
 
 footer{
     font-weight: bold;
-    height: 55px;
+    height: 44px;
     text-align: center;
     background-color: #02589b;
     margin-top: 5%;
 }
 
 #myBtn {
+    font-size: 25px;
+    font-weight: bold;
     border: none; /* Remove borders */
     outline: none; /* Remove outline */
     background-color: red; /* Set a background color */
     color: white; /* Text color */
     cursor: pointer; /* Add a mouse pointer on hover */
-    padding: 10px; /* Some padding */
-    border-radius: 10px; /* Rounded corners */
+    padding-left: 10px;
+    padding-right: 10px;
+    border-radius: 5px; /* Rounded corners */
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
     image-rendering: pixelated;
     border: 2px solid #000;
     color: #DDD;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
-  }
-  
-  #myBtn:hover {
-    background-color: #555; /* Add a dark-grey background on hover */
   }
