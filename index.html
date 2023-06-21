@@ -21,7 +21,7 @@
             <ul class="menu">
                 <li><a href="#home">Home</a></li>
                 <li><a href="#about">About</a></li>
-                <li><a href="#apply">Apply</a></li>
+                <li><a href="#apply" id="apply1">Apply</a></li>
                 <li><a href="#">Map</a></li>
                 <li><a href="https://ko-fi.com/bioscloud">Donate</a></li>
                 <li><a href="https://discord.gg/Qr6eNDguFy" class="discord1">
@@ -59,6 +59,7 @@
         <br>
         We use Discord as our primary form of communication. All of the information
         about important announcements, server events, and fun banter happens there!
+        <a href="https://discord.gg/Qr6eNDguFy">Join our discord</a>
     </p>
     <h1 id="faq" class="title">Frequently Asked Questions</h1>
     <div class="faq-content">
@@ -148,12 +149,12 @@
             <tr>
                 <td>Age</td>
                 <td>
-                    <input type="number" name="Age" maxlength="2" placeholder="21 years or older" required />
+                    <input type="text" name="Age" maxlength="2" placeholder="21 years or older" required />
                 </td>
             </tr>
             <td>Minecraft Name</td>
             <td>
-                <input type="text" name="minecraft-name" maxlength="16" required />
+                <input type="text" name="minecraft-name" maxlength="16" minlength="3" required />
             </td>
             </tr>
             <tr>
@@ -189,7 +190,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="test2">
+                <td class="understand-checkbox">
                     <div class="checkbox-wrapper-19">
                         <input type="checkbox" id="cbtest-19" required />
                         <label for="cbtest-19" class="check-box">
@@ -201,7 +202,7 @@
                 </td>
             </tr>
             <tr>
-                <td class="test2">
+                <td class="understand-checkbox">
                     <div class="checkbox-wrapper-19">
                         <input type="checkbox" id="cbtest-20" required />
                         <label for="cbtest-20" class="check-box">
@@ -212,16 +213,14 @@
                     </div>
                 </td>
             </tr>
-            <td colspan="3" align="center" class="test1">
-                <!-- <button type="submit">SUBMIT</button> -->
-                <input type="submit" value="APPLY" required>
-                <!-- <input type="reset" value="RESET"> -->
+            <td colspan="3" align="center" class="apply-button-box">
+                <input type="submit" value="SUBMIT" class="apply-button" required>
             </td>
             </tr>
         </table>
     </form>
     <footer>
-        Designed by Prime
+        Designed by Prime with help from Jouwee and Luna
         <button onclick="topFunction()" id="myBtn" title="Go to top">^</button>
     </footer>
     <script src="myscript.js"></script>

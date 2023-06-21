@@ -7,6 +7,13 @@ function topFunction() {
   document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
+let getApply = document.getElementById('apply1') //from <a id="apply1">apply</a>
+let getNav = document.getElementsByClassName("menu") //from <ul class="menu">
+
+getApply.addEventListener('click',function(){
+    document.getElementsByClassName("menu").style.display = "-200px"
+});
+
 function submitForm() {
     const getAge = document.getElementsByName('Age')[0].value
     const getMinecraftName = document.getElementsByName('minecraft-name')[0].value

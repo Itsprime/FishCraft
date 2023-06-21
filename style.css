@@ -5,7 +5,7 @@
     text-decoration: none;
     list-style: none;
     font-family: minecraftia;
-    outline: rgb(43, 231, 222) dashed 1px;
+    /* outline: rgb(43, 231, 222) dashed 1px; */
     cursor: default;
 }
 
@@ -86,6 +86,7 @@ textarea {
 }
 
 img.discord {
+    cursor: pointer;
     padding: 0px;
     display: block;
     width: 3em;
@@ -161,12 +162,12 @@ img.discord {
     width: 30px;
 }
 
+/* KEY */
 .navigation input:checked~.menu {
     right: 0;
 }
 
 @media screen and (max-width: 992px) {
-
     .hamburger,
     .toggle-menu {
         display: block;
@@ -435,28 +436,21 @@ input[type="reset"]:hover {
 
 }
 
-input[type="submit"],
-input[type="reset"] {
+.apply-button {
     cursor: pointer;
     width: 100px;
-    height: 30px;
-    padding-bottom: 4%;
+    height: 45px;
     font-size: large;
     background: #999 url('https://i.ibb.co/rb2TWXL/bgbtn.png') center / cover;
     image-rendering: pixelated;
-    margin-right: 5%;
+    margin-top: 10px;
+    margin-right: auto;
     margin-left: auto;
     text-align: center;
     border: 2px solid #000;
     color: #DDD;
     text-shadow: 2px 2px #000A;
     box-shadow: inset -2px -4px #0006, inset 2px 2px #FFF7;
-
-    &:hover {
-        background-color: rgba(100, 100, 255, .45);
-        text-shadow: 2px 2px #202013CC;
-        color: #FFFFA0;
-    }
 }
 
 td {
@@ -469,18 +463,25 @@ td > input, textarea{
     font-size: 16px;
 }
 
-.test2 {
+.understand-checkbox {
     display: flex;
     align-items: center;
-}
-
-.test1 {
-    display: block;
 }
 
 .understand {
     padding-left: 15px;
 }
+
+.apply-button-box {
+    display: block;
+    border-top: 2px solid grey;
+}
+
+.application{
+    border-bottom: 2px solid grey;
+    padding-bottom: 5px;
+}
+
 
 .checkbox-wrapper-19 {
     box-sizing: border-box;
