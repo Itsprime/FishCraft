@@ -1,17 +1,31 @@
-// Get the button:
-let mybutton = document.getElementById("myBtn");
 
-// When the user clicks on the button, scroll to the top of the document
+let mybutton = document.getElementById("myBtn");
+let getMenu = document.getElementsByClassName("menu")[0];
+let getBurgerButton = document.getElementsByClassName("toggle-menu")[0];
+let getMenuButton = document.querySelectorAll(".menu-button");
+
 function topFunction() {
-  document.body.scrollTop = 0; // For Safari
-  document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
+    document.body.scrollTop = 0; // For Safari
+    document.documentElement.scrollTop = 0; // For Chrome, Firefox, IE and Opera
 }
 
-let getApply = document.getElementById('apply1') //from <a id="apply1">apply</a>
-let getNav = document.getElementsByClassName("menu") //from <ul class="menu">
+getMenuButton.forEach((e) => {
+    e.addEventListener('click', function () {
+        getMenu.style.right = "-200px"
+        getBurgerButton.checked = false;
+        // document.getElementsByClassName("header")[0].style.background = "blue"
+    });
+});
 
-getApply.addEventListener('click',function(){
-    document.getElementsByClassName("menu").style.display = "-200px"
+getBurgerButton.addEventListener('click', function () {
+    if (getBurgerButton.checked == true) {
+        getBurgerButton.checked = true;
+        getMenu.style.right = "0";
+    }
+    else if (getBurgerButton.checked == false) {
+        getBurgerButton.checked = false;
+        getMenu.style.right = "-200px";
+    }
 });
 
 function submitForm() {
